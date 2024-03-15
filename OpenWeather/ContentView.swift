@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel:WeatherViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+             VStack {
+             Text(viewModel.cityName)
+             .font(.largeTitle)
+             .padding()
+             Text(viewModel.temperature)
+             .font(.system(size:70))
+             .bold()
+             Text(viewModel.weatherIcon)
+             .font(.largeTitle)
+             .padding()
+             Text(viewModel.weatherDescription)
+             }.onAppear(perform:viewModel.refresh)
+             .padding()
+             }
+             
         }
-        .padding()
-    }
-}
-
+        
 #Preview {
-    ContentView()
+    //ContentView()
+    ContentView(viewModel: WeatherViewModel(weatherService: WeatherService()))
 }
