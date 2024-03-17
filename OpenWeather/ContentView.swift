@@ -24,7 +24,9 @@ struct ContentView: View {
              .padding()
              Text(viewModel.weatherDescription)
              }.onAppear(perform:viewModel.refresh)
+            
              .padding()
+
              }
              
         }

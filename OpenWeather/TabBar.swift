@@ -9,41 +9,31 @@ import SwiftUI
 
 struct TabBar: View {
     @ObservedObject var viewModel:WeatherViewModel
-    @State var isPresenting:Bool = false
-    @State private var selectedItem = 1
-    @State private var oldSelectedItem = 1
+    @State var loading : Int = 0
+    @State var isPresenting:Int = 0
     var body: some View {
-        TabView(selection: $selectedItem) {
+        
+        TabView() {
             
-            
-            Text("")
-                .tabItem { Label("Locations",systemImage: "location.magnifyingglass") }.tag(1)
-            
-            ContentView(viewModel: WeatherViewModel(weatherService: WeatherService()))
+            ForeCastView(viewModel: WeatherViewModel(weatherService: WeatherService()))
+              //  .onAppear(perform:viewModel.refresh)
                 .tabItem { Label("Forecast",systemImage: "chart.bar.xaxis") }.tag(2)
-                
             
+            
+            LocationsView()
+                .tabItem { Label("Locations",systemImage: "location.magnifyingglass") }.tag(1)
+                    
             Text("Radar")
                 .tabItem { Label("Radar",systemImage: "laser.burst") }.tag(3)
             
-            Text("Settings")
+            SettingsView()
                 .tabItem { Label("Settings",systemImage: "gearshape.fill") }.tag(4)
-        }
-        .onChange(of: selectedItem) {    // SwiftUI 2.0 track changes
-                        if 1 == selectedItem {
-                        self.isPresenting = true
-                        } else {
-                            self.oldSelectedItem = $0
-                        }
-                    }
-                .sheet(isPresented: $isPresenting, onDismiss: {
-                        self.selectedItem = self.oldSelectedItem
-                    }) {
-                    LocationsView()
-                    }.accentColor(.green)
+        }.accentColor(.green)
+       
     }
 }
 
 #Preview {
-    TabBar(viewModel: WeatherViewModel(weatherService: WeatherService()))
+    TabBar(viewModel: WeatherViewModel(weatherService: WeatherService()), loading: 0)
+        
 }

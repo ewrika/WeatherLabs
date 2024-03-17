@@ -11,10 +11,12 @@ import SwiftUI
 struct OpenWeatherApp: App {
     var body: some Scene {
         WindowGroup {
+            
             let weatherService = WeatherService()
             let viewModel = WeatherViewModel(weatherService: weatherService)
             TabBar(viewModel: viewModel)
-           // ContentView(viewModel: viewModel)
+                
+           //ForeCastView(viewModel: viewModel)
         }
     }
 }
