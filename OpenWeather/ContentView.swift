@@ -23,7 +23,7 @@ struct ContentView: View {
              .font(.largeTitle)
              .padding()
              Text(viewModel.weatherDescription)
-             }.onAppear(perform:viewModel.refresh)
+             }//.onAppear(perform:viewModel.refresh)
             
              .padding()
 

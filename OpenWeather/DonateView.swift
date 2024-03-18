@@ -11,12 +11,23 @@ struct DonateView: View {
     @Environment(\.dismiss) var dismiss
 
         var body: some View {
-            Button("Press to dismiss") {
-                dismiss()
+            
+            NavigationView{
+                List{
+                    
+                }.navigationTitle("Hello Upgrades")
+                
+                    .toolbar{
+                        Button{
+dismiss()
+                        }label: {
+                            Text("Done")
+                                .font(.system(size: 20))
+                                .font(.title)
+                        }
+                    }
+                    
             }
-            .font(.title)
-            .padding()
-            .background(.black)
         }
 }
 

@@ -16,5 +16,6 @@ public struct Weather {
     temperature = "\(Int(response.main.temp))"
     description = response.weather.first?.description ?? ""
     iconName = response.weather.first?.iconName ?? ""
+      print(city,temperature,description,iconName)
   }
 }

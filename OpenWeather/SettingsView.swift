@@ -8,48 +8,70 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
-
+    @Environment(\.colorScheme) private var scheme
+    @State private var changeTheme: Bool = false
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     var body: some View {
         NavigationStack {
+
+            
             Form {
                 Section(header: Text("DISPLAY OPTIONS")) {
-                    HStack {
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 5)
-                                .frame(width: 30, height: 30)
-                                .foregroundStyle(.orange)
-                            Image(systemName: "globe")
-                                .foregroundStyle(.white)
+                    NavigationLink{
+                        DonateView()
+                    }label: {
+                        HStack {
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 5)
+                                    .frame(width: 30, height: 30)
+                                    .foregroundStyle(.orange)
+                                Image(systemName: "globe")
+                                    .foregroundStyle(.white)
+                            }
+                            Text("Units")
                         }
-                        Text("Units")
                     }
-                    HStack {
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 5)
-                                .frame(width: 30, height: 30)
-                                .foregroundStyle(.orange)
-                            Image(systemName: "moon.fill")
-                                .foregroundStyle(.white)
+                    Button{
+                      // AppearanceView()
+                        changeTheme.toggle()
+                    }label: {
+                        HStack {
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 5)
+                                    .frame(width: 30, height: 30)
+                                    .foregroundStyle(.orange)
+                                Image(systemName: "moon.fill")
+                            }
+                            Text("Appereance")
                         }
-                        Text("Appereance")
-                    }
+                        .preferredColorScheme(userTheme.colorScheme)
+                    }.buttonStyle(.plain)
+                    .sheet(isPresented: $changeTheme, content: {
+                        UnitsView(scheme: scheme)
+                            .presentationDetents([.height(410)])
+                            .presentationBackground(.clear)
+                    })
                 }
                 
                 Section(header: Text("EXCLUSIVE EXTRAS")) {
-                    HStack {
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 5)
-                                .frame(width: 30, height: 30)
-                                .foregroundStyle(.indigo)
-                            Image(systemName: "heart.fill")
-                                .foregroundStyle(.white)
+                    NavigationLink{
+                        DonateView()
+                    }label: {
+                        HStack {
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 5)
+                                    .frame(width: 30, height: 30)
+                                    .foregroundStyle(.indigo)
+                                Image(systemName: "heart.fill")
+                                    .foregroundStyle(.white)
+                            }
+                            Text("Updgrade Now")
                         }
-                        Text("Updgrade Now")
                     }
 
+
                 }
-            }
+            }.navigationTitle("Settings")
         }
                 .navigationBarTitle("Settings")
             }

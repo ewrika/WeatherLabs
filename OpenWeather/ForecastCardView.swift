@@ -44,7 +44,7 @@ struct ForecastCard: View {
             }.padding(.horizontal,8)
                 .padding(.vertical,16)
                 .frame(width: 60,height: 146)
-                .onAppear(perform:viewModel.refresh)
+               // .onAppear(perform:viewModel.refresh)
         }
 
     }

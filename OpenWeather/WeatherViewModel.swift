@@ -5,7 +5,7 @@
 
 import Foundation
 
-private let defaultIcon = "❓"
+private let defaultIcon = "Stars_F"
 private let iconMap = [
   "Drizzle" : "Cloud_Rain_F",
   "Thunderstorm" : "Cloud_Lighting_F",
@@ -30,6 +30,7 @@ class WeatherViewModel: ObservableObject {
 
   func refresh() {
       print("load api")
+      print(self.cityName,self.temperature,self.weatherDescription,self.weatherIcon)
     weatherService.loadWeatherData { weather, error in
       DispatchQueue.main.async {
         if let _ = error {

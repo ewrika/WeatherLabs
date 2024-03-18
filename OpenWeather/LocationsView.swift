@@ -10,7 +10,7 @@ import SwiftUI
 struct LocationsView: View {
     @State private var search: String = ""
     @State private var locationService = LocationService(completer: .init())
-    
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     var body: some View {
         VStack{
             HStack{
@@ -32,15 +32,15 @@ struct LocationsView: View {
             List{
                 ForEach(locationService.completions){completion in
                     Button(action: { }) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(completion.title)
+                        VStack(alignment: .leading) {
+                            SearchResult(title:completion.title)
                                 .font(.headline)
                                 .fontDesign(.rounded)
-                            Text(completion.subTitle)
                         }
-                    }
-                }.listRowBackground(Color.clear)
+                    }.foregroundStyle(.black)
+                }.listRowBackground(Color.white)
             }
+            
             .onChange(of: search) {
                 locationService.update(queryFragment: search)}
         }

@@ -9,11 +9,12 @@ import SwiftUI
 
 struct TabBar: View {
     @ObservedObject var viewModel:WeatherViewModel
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     var body: some View {
         TabView() {
             
             ForeCastView(viewModel: WeatherViewModel(weatherService: WeatherService()))
-              //  .onAppear(perform:viewModel.refresh)
+              
                 .tabItem { Label("Forecast",systemImage: "chart.bar.xaxis") }.tag(2)
     
             LocationsView()
@@ -24,8 +25,8 @@ struct TabBar: View {
             
             SettingsView()
                 .tabItem { Label("Settings",systemImage: "gearshape.fill") }.tag(4)
-        }.accentColor(.green)
-       
+        }//.accentColor(.green)
+        .preferredColorScheme(userTheme.colorScheme)
     }
 }
 

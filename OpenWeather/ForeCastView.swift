@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ForeCastView: View {
     @ObservedObject var viewModel:WeatherViewModel
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     @State var showDonate = false
     @State private var selection = 0
     var body: some View {
@@ -21,7 +22,7 @@ struct ForeCastView: View {
                 Text(Image(systemName: "square.and.arrow.up"))
                     .foregroundStyle(.green)
             }.padding()
-                .onAppear(perform:viewModel.refresh)
+                
             Divider()
             
             
@@ -76,7 +77,7 @@ struct ForeCastView: View {
                  DonateView()
                  }
                  }
-            }
+            }.preferredColorScheme(userTheme.colorScheme)
             
         }
     }
