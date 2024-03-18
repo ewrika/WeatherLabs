@@ -24,6 +24,7 @@
 		E89890C82B57CCE900AA52C8 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89890C72B57CCE900AA52C8 /* WeatherService.swift */; };
 		E89890CA2B57D4EF00AA52C8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89890C92B57D4EF00AA52C8 /* Weather.swift */; };
 		E89890CC2B57E54C00AA52C8 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89890CB2B57E54C00AA52C8 /* WeatherViewModel.swift */; };
+		E8DA6A7B2BA837C9007462AD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A7A2BA837C9007462AD /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E89890C72B57CCE900AA52C8 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		E89890C92B57D4EF00AA52C8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E89890CB2B57E54C00AA52C8 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		E8DA6A7A2BA837C9007462AD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E859BF732BA7523300D5FD14 /* DonateView.swift */,
 				E859BF692BA4D20300D5FD14 /* TabBar.swift */,
 				E859BF6B2BA4D77300D5FD14 /* LocationsView.swift */,
+				E8DA6A7A2BA837C9007462AD /* LocationService.swift */,
 				E859BF6D2BA4E53A00D5FD14 /* SettingsView.swift */,
 				E859BF712BA633E600D5FD14 /* SheetView.swift */,
 				E89890C72B57CCE900AA52C8 /* WeatherService.swift */,
@@ -186,6 +189,7 @@
 				E859BF702BA606BE00D5FD14 /* ForeCastView.swift in Sources */,
 				E859BF9A2BA76AD800D5FD14 /* Extensions.swift in Sources */,
 				E89890C82B57CCE900AA52C8 /* WeatherService.swift in Sources */,
+				E8DA6A7B2BA837C9007462AD /* LocationService.swift in Sources */,
 				E859BF9E2BA7700E00D5FD14 /* ForecastCardModel.swift in Sources */,
 				E89890BA2B57CBD700AA52C8 /* OpenWeatherApp.swift in Sources */,
 				E859BF9C2BA76FEC00D5FD14 /* ForecastCardView.swift in Sources */,

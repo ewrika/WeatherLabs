@@ -29,9 +29,7 @@ struct Forecast: Identifiable {
     var weather: WeatherDara
     var probability: Int
     var temperature: Int
-    var high: Int
-    var low: Int
-    var location: String
+
     
     var icon: String {
         switch weather {
@@ -56,12 +54,12 @@ extension Forecast {
     static let day: TimeInterval = 60 * 60 * 24
     
     static let hourly: [Forecast] = [
-        Forecast(date: .init(timeIntervalSinceNow: hour * -1), weather: .Drizzle, probability: 30, temperature: 19, high: 24, low: 18, location: "Montreal, Canada"),
-        Forecast(date: .now, weather: .Thunderstorm, probability: 0, temperature: 19, high: 24, low: 18, location: "Montreal, Canada"),
-        Forecast(date: .init(timeIntervalSinceNow: hour * 1), weather: .Rain, probability: 0, temperature: 19, high: 24, low: 18, location: "Montreal, Canada"),
-        Forecast(date: .init(timeIntervalSinceNow: hour * 2), weather: .Snow, probability: 0, temperature: 18, high: 24, low: 18, location: "Montreal, Canada"),
-        Forecast(date: .init(timeIntervalSinceNow: hour * 3), weather: .Clear, probability: 0, temperature: 19, high: 24, low: 18, location: "Montreal, Canada"),
-        Forecast(date: .init(timeIntervalSinceNow: hour * 4), weather: .Clouds, probability: 0, temperature: 19, high: 24, low: 18, location: "Montreal, Canada")
+        Forecast(date: .init(timeIntervalSinceNow: hour * -1), weather: .Drizzle, probability: 30, temperature: 19),
+        Forecast(date: .now, weather: .Thunderstorm, probability: 0, temperature: 19),
+        Forecast(date: .init(timeIntervalSinceNow: hour * 1), weather: .Rain, probability: 0, temperature: 19),
+        Forecast(date: .init(timeIntervalSinceNow: hour * 2), weather: .Snow, probability: 0, temperature: 18),
+        Forecast(date: .init(timeIntervalSinceNow: hour * 3), weather: .Clear, probability: 0, temperature: 19),
+        Forecast(date: .init(timeIntervalSinceNow: hour * 4), weather: .Clouds, probability: 0, temperature: 19)
     ]
 }
 

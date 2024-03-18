@@ -9,33 +9,52 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    var first:[Platform] = [.init(name:"Units",imageName:"globe",color: .orange),
-                            .init(name:"Appearance",imageName: "moon",color:.orange)]
-    
-    var body: some View {
-            NavigationStack {
-                Form {
-                    Section(header: Text("DISPLAY OPTIONS")) {
-                        ForEach(first,id:\.name){ platform in
-                            Label(platform.name,systemImage:platform.imageName)
-                                .foregroundColor(platform.color)
-                        }
-                    }
 
-                    Section(header: Text("EXCLUSIVE EXTRAS")) {
-                        Text("Updgrade Now") + Text(Image(systemName: "house"))
-                        Text("Forecast Data")
-                        Text("Radar Options")
-                        Text("App Icon")
-                        Text("Theme Color")
-                        Text("Apple Watch")
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section(header: Text("DISPLAY OPTIONS")) {
+                    HStack {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 5)
+                                .frame(width: 30, height: 30)
+                                .foregroundStyle(.orange)
+                            Image(systemName: "globe")
+                                .foregroundStyle(.white)
+                        }
+                        Text("Units")
+                    }
+                    HStack {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 5)
+                                .frame(width: 30, height: 30)
+                                .foregroundStyle(.orange)
+                            Image(systemName: "moon.fill")
+                                .foregroundStyle(.white)
+                        }
+                        Text("Appereance")
                     }
                 }
+                
+                Section(header: Text("EXCLUSIVE EXTRAS")) {
+                    HStack {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 5)
+                                .frame(width: 30, height: 30)
+                                .foregroundStyle(.indigo)
+                            Image(systemName: "heart.fill")
+                                .foregroundStyle(.white)
+                        }
+                        Text("Updgrade Now")
+                    }
 
+                }
+            }
+        }
                 .navigationBarTitle("Settings")
             }
         }
-}
+
 
 #Preview {
     SettingsView()

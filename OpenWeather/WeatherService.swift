@@ -9,7 +9,7 @@ import Foundation
 // Sample URL:
 // https://api.openweathermap.org/data/2.5/weather?lat=51.50998&lon=-0.1337&appid=YOUR_API_KEY&units=metric
 
-public final class WeatherService: NSObject {
+ class WeatherService: NSObject {
 
   private let locationManager = CLLocationManager()
   private let API_KEY = "c9fe9ab82fefc53a641582c72462beaf" // Replace with your own API key
