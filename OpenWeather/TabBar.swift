@@ -9,17 +9,13 @@ import SwiftUI
 
 struct TabBar: View {
     @ObservedObject var viewModel:WeatherViewModel
-    @State var loading : Int = 0
-    @State var isPresenting:Int = 0
     var body: some View {
-        
         TabView() {
             
             ForeCastView(viewModel: WeatherViewModel(weatherService: WeatherService()))
               //  .onAppear(perform:viewModel.refresh)
                 .tabItem { Label("Forecast",systemImage: "chart.bar.xaxis") }.tag(2)
-            
-            
+    
             LocationsView()
                 .tabItem { Label("Locations",systemImage: "location.magnifyingglass") }.tag(1)
                     
@@ -34,6 +30,6 @@ struct TabBar: View {
 }
 
 #Preview {
-    TabBar(viewModel: WeatherViewModel(weatherService: WeatherService()), loading: 0)
+    TabBar(viewModel: WeatherViewModel(weatherService: WeatherService()))
         
 }
