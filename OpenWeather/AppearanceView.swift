@@ -14,6 +14,7 @@ struct UnitsView: View {
     @Namespace private var animation
  
     var body: some View {
+        
         VStack(spacing:15){
             
             Text("При выборе темы, отрубается апи и нужно перезайти в приложение(")
@@ -41,7 +42,7 @@ struct UnitsView: View {
                         }.contentShape(.rect)
                         .onTapGesture{
                             userTheme = theme
-                       // viewModel: WeatherViewModel(weatherService: WeatherService())
+                      
                         }
                 }
             }.padding(3)
@@ -54,8 +55,7 @@ struct UnitsView: View {
         .background(.themeBG)
         .clipShape(.rect(cornerRadius:30))
         .environment(\.colorScheme,scheme)
-        .padding(.horizontal,15)
-        .environment(\.colorScheme, scheme)
+
 
     }
     

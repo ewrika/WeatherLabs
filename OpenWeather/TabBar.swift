@@ -26,7 +26,7 @@ struct TabBar: View {
             SettingsView()
                 .tabItem { Label("Settings",systemImage: "gearshape.fill") }.tag(4)
         }//.accentColor(.green)
-        .preferredColorScheme(userTheme.colorScheme)
+        //.preferredColorScheme(userTheme.colorScheme)
     }
 }
 
