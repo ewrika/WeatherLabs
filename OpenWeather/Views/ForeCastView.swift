@@ -106,14 +106,12 @@ struct ExtractedView2: View {
                         .foregroundColor(.white)
                 }
                 Text(Image(systemName: "sun.horizon")).foregroundStyle(.yellow).font(.system(size:30))
-                Text(Image(systemName: "3.circle.fill")).foregroundStyle(.yellow).font(.system(size:30))
             }
             VStack(alignment:.leading,spacing:25){
                 Text("18-33mph winds from the southwest")
                 Text("Humidity 54% ")
                 Text("Pressure 1005hPA and falling")
                 Text("Sunrise 6:59 -> Sunset 18:58")
-                Text("Moderate UV levels")
             }
         }.padding()
     }
@@ -139,7 +137,7 @@ struct ExtractedView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200,height: 200)
-                    
+                        .offset(y:-20)
                     VStack {
                         Text(viewModel.temperature)
                             .font(.system(size: 50))

@@ -18,7 +18,7 @@ struct SettingsView: View {
             Form {
                 Section(header: Text("DISPLAY OPTIONS")) {
                     NavigationLink{
-                        DonateView()
+                        SheetView()
                     }label: {
                         HStack {
                             ZStack{
@@ -55,7 +55,7 @@ struct SettingsView: View {
                 
                 Section(header: Text("EXCLUSIVE EXTRAS")) {
                     NavigationLink{
-                        DonateView()
+                        SheetView()
                     }label: {
                         HStack {
                             ZStack{

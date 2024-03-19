@@ -16,7 +16,7 @@ struct LocationsView: View {
             HStack{
                 Text("Search Locations")
             }.frame(maxWidth: .infinity,alignment: .leading)
-            
+                .padding()
             HStack{
                 Image(systemName:"magnifyingglass")
                 TextField("Find locations here",text:$search)
@@ -27,7 +27,7 @@ struct LocationsView: View {
             .background(
                 RoundedRectangle(cornerRadius: 10,style:.continuous)
                     .strokeBorder(.gray)
-            )
+            ).padding()
             Divider()
             List{
                 ForEach(locationService.completions){completion in

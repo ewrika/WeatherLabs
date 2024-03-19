@@ -23,7 +23,7 @@ struct ContentView: View {
              .font(.largeTitle)
              .padding()
              Text(viewModel.weatherDescription)
-             }//.onAppear(perform:viewModel.refresh)
+             }
             
              .padding()
 
@@ -32,6 +32,5 @@ struct ContentView: View {
         }
         
 #Preview {
-    //ContentView()
     ContentView(viewModel: WeatherViewModel(weatherService: WeatherService()))
 }

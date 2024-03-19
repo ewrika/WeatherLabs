@@ -16,7 +16,6 @@ struct OpenWeatherApp: App {
             let viewModel = WeatherViewModel(weatherService: weatherService)
             TabBar(viewModel: viewModel)
                 
-           //ForeCastView(viewModel: viewModel)
         }
     }
 }

@@ -30,7 +30,40 @@
 		E8DA6A862BA8BC33007462AD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A852BA8BC33007462AD /* Theme.swift */; };
 		E8DA6A8D2BA969C7007462AD /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A8C2BA969C7007462AD /* RadarView.swift */; };
 		E8DA6A8F2BA988F1007462AD /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A8E2BA988F1007462AD /* LocationSearchViewModel.swift */; };
+		E8DA6A972BA98F5F007462AD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DA6A962BA98F5F007462AD /* WidgetKit.framework */; };
+		E8DA6A992BA98F5F007462AD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DA6A982BA98F5F007462AD /* SwiftUI.framework */; };
+		E8DA6A9C2BA98F5F007462AD /* TodayWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A9B2BA98F5F007462AD /* TodayWidgetBundle.swift */; };
+		E8DA6A9E2BA98F5F007462AD /* TodayWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A9D2BA98F5F007462AD /* TodayWidgetLiveActivity.swift */; };
+		E8DA6AA02BA98F5F007462AD /* TodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A9F2BA98F5F007462AD /* TodayWidget.swift */; };
+		E8DA6AA22BA98F5F007462AD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6AA12BA98F5F007462AD /* AppIntent.swift */; };
+		E8DA6AA42BA98F62007462AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DA6AA32BA98F62007462AD /* Assets.xcassets */; };
+		E8DA6AA82BA98F62007462AD /* TodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E8DA6A942BA98F5F007462AD /* TodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8DA6AF22BAA2322007462AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DA6AF12BAA2322007462AD /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8DA6AA62BA98F62007462AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E89890AE2B57CBD700AA52C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8DA6A932BA98F5F007462AD;
+			remoteInfo = TodayWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8DA6AAC2BA98F62007462AD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8DA6AA82BA98F62007462AD /* TodayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E859BF692BA4D20300D5FD14 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -57,6 +90,16 @@
 		E8DA6A852BA8BC33007462AD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		E8DA6A8C2BA969C7007462AD /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
 		E8DA6A8E2BA988F1007462AD /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
+		E8DA6A942BA98F5F007462AD /* TodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DA6A962BA98F5F007462AD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E8DA6A982BA98F5F007462AD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E8DA6A9B2BA98F5F007462AD /* TodayWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetBundle.swift; sourceTree = "<group>"; };
+		E8DA6A9D2BA98F5F007462AD /* TodayWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		E8DA6A9F2BA98F5F007462AD /* TodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidget.swift; sourceTree = "<group>"; };
+		E8DA6AA12BA98F5F007462AD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		E8DA6AA32BA98F62007462AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8DA6AA52BA98F62007462AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DA6AF12BAA2322007462AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +110,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DA6A912BA98F5F007462AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA6A992BA98F5F007462AD /* SwiftUI.framework in Frameworks */,
+				E8DA6A972BA98F5F007462AD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				E89890B82B57CBD700AA52C8 /* OpenWeather */,
+				E8DA6A9A2BA98F5F007462AD /* TodayWidget */,
+				E8DA6A952BA98F5F007462AD /* Frameworks */,
 				E89890B72B57CBD700AA52C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E89890B62B57CBD700AA52C8 /* OpenWeather.app */,
+				E8DA6A942BA98F5F007462AD /* TodayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,12 +144,12 @@
 		E89890B82B57CBD700AA52C8 /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				E8DA6AF12BAA2322007462AD /* Launch Screen.storyboard */,
 				E89890B92B57CBD700AA52C8 /* OpenWeatherApp.swift */,
 				E89890BB2B57CBD700AA52C8 /* ContentView.swift */,
 				E8DA6A892BA968D5007462AD /* Model */,
 				E8DA6A872BA96899007462AD /* Views */,
 				E859BF712BA633E600D5FD14 /* SheetView.swift */,
-				E8DA6A8B2BA9694E007462AD /* Widgets */,
 				E8DA6A842BA8BC1D007462AD /* Theme */,
 				E89890BD2B57CBD800AA52C8 /* Assets.xcassets */,
 				E89890BF2B57CBD800AA52C8 /* Preview Content */,
@@ -149,11 +204,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E8DA6A8B2BA9694E007462AD /* Widgets */ = {
+		E8DA6A952BA98F5F007462AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8DA6A962BA98F5F007462AD /* WidgetKit.framework */,
+				E8DA6A982BA98F5F007462AD /* SwiftUI.framework */,
 			);
-			path = Widgets;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8DA6A9A2BA98F5F007462AD /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA6A9B2BA98F5F007462AD /* TodayWidgetBundle.swift */,
+				E8DA6A9D2BA98F5F007462AD /* TodayWidgetLiveActivity.swift */,
+				E8DA6A9F2BA98F5F007462AD /* TodayWidget.swift */,
+				E8DA6AA12BA98F5F007462AD /* AppIntent.swift */,
+				E8DA6AA32BA98F62007462AD /* Assets.xcassets */,
+				E8DA6AA52BA98F62007462AD /* Info.plist */,
+			);
+			path = TodayWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,15 +236,34 @@
 				E89890B22B57CBD700AA52C8 /* Sources */,
 				E89890B32B57CBD700AA52C8 /* Frameworks */,
 				E89890B42B57CBD700AA52C8 /* Resources */,
+				E8DA6AAC2BA98F62007462AD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8DA6AA72BA98F62007462AD /* PBXTargetDependency */,
 			);
 			name = OpenWeather;
 			productName = OpenWeather;
 			productReference = E89890B62B57CBD700AA52C8 /* OpenWeather.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E8DA6A932BA98F5F007462AD /* TodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DA6AA92BA98F62007462AD /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */;
+			buildPhases = (
+				E8DA6A902BA98F5F007462AD /* Sources */,
+				E8DA6A912BA98F5F007462AD /* Frameworks */,
+				E8DA6A922BA98F5F007462AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidgetExtension;
+			productName = TodayWidgetExtension;
+			productReference = E8DA6A942BA98F5F007462AD /* TodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -187,6 +276,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E89890B52B57CBD700AA52C8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E8DA6A932BA98F5F007462AD = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -205,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				E89890B52B57CBD700AA52C8 /* OpenWeather */,
+				E8DA6A932BA98F5F007462AD /* TodayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -214,8 +307,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DA6AF22BAA2322007462AD /* Launch Screen.storyboard in Resources */,
 				E89890C12B57CBD800AA52C8 /* Preview Assets.xcassets in Resources */,
 				E89890BE2B57CBD800AA52C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DA6A922BA98F5F007462AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA6AA42BA98F62007462AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +352,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8DA6A902BA98F5F007462AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA6A9E2BA98F5F007462AD /* TodayWidgetLiveActivity.swift in Sources */,
+				E8DA6AA22BA98F5F007462AD /* AppIntent.swift in Sources */,
+				E8DA6AA02BA98F5F007462AD /* TodayWidget.swift in Sources */,
+				E8DA6A9C2BA98F5F007462AD /* TodayWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8DA6AA72BA98F62007462AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8DA6A932BA98F5F007462AD /* TodayWidgetExtension */;
+			targetProxy = E8DA6AA62BA98F62007462AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E89890C22B57CBD800AA52C8 /* Debug */ = {
@@ -375,6 +496,7 @@
 		E89890C52B57CBD800AA52C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,6 +509,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -406,6 +529,7 @@
 		E89890C62B57CBD800AA52C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +542,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -428,6 +553,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = testplay.OpenWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8DA6AAA2BA98F62007462AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36N72Y7M5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testplay.OpenWeather.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8DA6AAB2BA98F62007462AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36N72Y7M5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testplay.OpenWeather.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,6 +630,15 @@
 			buildConfigurations = (
 				E89890C52B57CBD800AA52C8 /* Debug */,
 				E89890C62B57CBD800AA52C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DA6AA92BA98F62007462AD /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DA6AAA2BA98F62007462AD /* Debug */,
+				E8DA6AAB2BA98F62007462AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
