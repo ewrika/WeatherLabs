@@ -13,9 +13,45 @@ struct DonateView: View {
         var body: some View {
             
             NavigationView{
-                List{
+                VStack{
+                    Text("Upgrade for Pro Features")
+                        .fontWeight(.bold)
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    Text("Tap a blue button below to instantly unlock our radar, Apple Watch app, data sources, air quality info, and much more.")
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal,60)
+                        .padding(.vertical)
+                    HStack{
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width:100,height: 100)
+                            Text("$1.99\nmonthly").foregroundStyle(.white).bold()
+                        }
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width:100,height: 100)
+                            Text("$11.99\nmonthly").foregroundStyle(.white).bold()
+                        }
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .frame(width:100,height: 100)
+                            Text("$31.99\nmonthly").foregroundStyle(.white).bold()
+                        }
+                    }.foregroundStyle(.cyan)
+                    Text("Montly and annual options include a 3-day free trial,so you can try it before you buy it!")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .padding(.horizontal,40)
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Text("Restore Previous Purchases")
+                    })
                     
-                }.navigationTitle("Hello Upgrades")
+                    Text("Here's everthing you get")
+                        .fontWeight(.bold)
+                        .font(.title)
+                    
+                    Spacer()
+                }
                 
                     .toolbar{
                         Button{

@@ -42,7 +42,7 @@ struct SettingsView: View {
                                     .foregroundStyle(.orange)
                                 Image(systemName: "moon.fill")
                             }
-                            Text("Appereance")
+                            Text("Appereance(click)")
                         }
                         .preferredColorScheme(userTheme.colorScheme)
                     }.buttonStyle(.plain)
