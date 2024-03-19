@@ -17,7 +17,7 @@ struct UnitsView: View {
         
         VStack(spacing:15){
             
-            Text("При выборе темы, отрубается апи и нужно перезайти в приложение(")
+            Text("Choose your style")
                 .font(.title2.bold())
                 .padding(.top,25)
             Circle()

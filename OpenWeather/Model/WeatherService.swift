@@ -6,16 +6,15 @@
 import CoreLocation
 import Foundation
 
-// Sample URL:
 // https://api.openweathermap.org/data/2.5/weather?lat=51.50998&lon=-0.1337&appid=YOUR_API_KEY&units=metric
 
  class WeatherService: NSObject {
 
   private let locationManager = CLLocationManager()
-  private let API_KEY = "c9fe9ab82fefc53a641582c72462beaf" // Replace with your own API key
+  private let API_KEY = "c9fe9ab82fefc53a641582c72462beaf"
   private var completionHandler: ((Weather?, LocationAuthError?) -> Void)?
   private var dataTask: URLSessionDataTask?
-
+    
   public override init() {
     super.init()
     locationManager.delegate = self
@@ -66,6 +65,7 @@ extension WeatherService: CLLocationManagerDelegate {
   ) {
     guard let location = locations.first else { return }
     makeDataRequest(forCoordinates: location.coordinate)
+      print("Coordinate: " , location.coordinate.longitude,location.coordinate.latitude)
   }
 
   public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

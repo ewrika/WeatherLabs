@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import MapKit
 struct TabBar: View {
     @ObservedObject var viewModel:WeatherViewModel
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
@@ -20,7 +20,7 @@ struct TabBar: View {
             LocationsView()
                 .tabItem { Label("Locations",systemImage: "location.magnifyingglass") }.tag(1)
                     
-            Text("Radar")
+            RadarView()
                 .tabItem { Label("Radar",systemImage: "laser.burst") }.tag(3)
             
             SettingsView()

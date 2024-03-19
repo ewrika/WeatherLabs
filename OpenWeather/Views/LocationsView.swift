@@ -34,11 +34,14 @@ struct LocationsView: View {
                     Button(action: { }) {
                         VStack(alignment: .leading) {
                             SearchResult(title:completion.title)
+                                .onTapGesture {
+                                    
+                                }
                                 .font(.headline)
                                 .fontDesign(.rounded)
                         }
-                    }.foregroundStyle(.black)
-                }.listRowBackground(Color.white)
+                    }
+                }
             }
             
             .onChange(of: search) {
