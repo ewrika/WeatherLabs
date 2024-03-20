@@ -14,7 +14,7 @@ import Foundation
   private let API_KEY = "c9fe9ab82fefc53a641582c72462beaf"
   private var completionHandler: ((Weather?, LocationAuthError?) -> Void)?
   private var dataTask: URLSessionDataTask?
-    
+  
   public override init() {
     super.init()
     locationManager.delegate = self

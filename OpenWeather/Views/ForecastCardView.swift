@@ -27,7 +27,7 @@ struct ForecastCard: View {
             // MARK : Card
             RoundedRectangle(cornerRadius: 10.0)
                 .fill(Color.yellow.opacity(isActive ? 1 : 0.2))
-                .frame(width: 60,height: 180)
+                .frame(width: 90,height: 180)
                 .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.25), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/,x:5,y: 4)
 
             
@@ -44,7 +44,7 @@ struct ForecastCard: View {
             }.padding(.horizontal,8)
                 .padding(.vertical,16)
                 .frame(width: 60,height: 146)
-               // .onAppear(perform:viewModel.refresh)
+               
         }
 
     }

@@ -149,7 +149,6 @@
 				E89890BB2B57CBD700AA52C8 /* ContentView.swift */,
 				E8DA6A892BA968D5007462AD /* Model */,
 				E8DA6A872BA96899007462AD /* Views */,
-				E859BF712BA633E600D5FD14 /* SheetView.swift */,
 				E8DA6A842BA8BC1D007462AD /* Theme */,
 				E89890BD2B57CBD800AA52C8 /* Assets.xcassets */,
 				E89890BF2B57CBD800AA52C8 /* Preview Content */,
@@ -186,6 +185,7 @@
 				E859BF692BA4D20300D5FD14 /* TabBar.swift */,
 				E859BF6B2BA4D77300D5FD14 /* LocationsView.swift */,
 				E859BF6F2BA606BE00D5FD14 /* ForeCastView.swift */,
+				E859BF712BA633E600D5FD14 /* SheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
