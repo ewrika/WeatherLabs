@@ -49,7 +49,22 @@ struct DonateView: View {
                     Text("Here's everthing you get")
                         .fontWeight(.bold)
                         .font(.title)
-                    
+                    HStack{
+                        VStack{
+                            Image(systemName: "target").offset(y:-55)
+                                .foregroundColor(.orange)
+                                .font(.system(size: 40))
+                            
+                        }
+                        VStack{
+                            HStack {
+                                Text("Advanced Radar").bold()
+                                Spacer()
+                            }
+                            Text("See exactly what's coming your way with our pro radar. Unlock animations and future forecasts, plus map layers for cloud cover, tropical storms, lightning, wildfires, and more. (Coverage depends on location.)")
+                        }
+                    }.multilineTextAlignment(.leading)
+                        .padding(.horizontal,10)
                     Spacer()
                 }
                 
